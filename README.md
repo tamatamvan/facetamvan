@@ -36,3 +36,21 @@ Here is the content of the package.json file :
 ```
 
 ## File and Folder 
+```bash
+.
+├── README.md
+├── client
+│   ├── assets
+│   │   └── fbsdk.js
+│   └── index.html
+└── server
+    ├── LICENSE
+    ├── README.md
+    ├── app.js
+    ├── bin
+    │   └── www
+    ├── package.json
+    └── routes
+        ├── index.js
+        └── users.js
+```
