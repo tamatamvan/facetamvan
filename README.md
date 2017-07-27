@@ -54,3 +54,20 @@ Here is the content of the package.json file :
         ├── index.js
         └── users.js
 ```
+
+## How To Run It
+To run this apps make sure you have node.js installed on your system.
+It's recommended for you to install package such as `live-server` or `serve` from npm which will be use for serving the client-side app.
+
+### Running the server
+```bash
+cd server
+npm i
+npm run dev
+```
+
+### Running the client
+```bash
+cd client
+live-server or serve
+```
