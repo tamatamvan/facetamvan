@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Facebook Login JavaScript Example</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://bootswatch.com/lumen/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    #timeline-wrapper {
+      display: none;
+    }
+    </style>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="assets/fbsdk.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron text-center">
+        <h1>
+          <i class="fa fa-facebook" aria-hidden="true"></i>ace<i class="fa fa-tumblr" aria-hidden="true"></i>amvan
+        </h1>
+        <button id="login-btn" class="btn btn-primary" type="button" onclick="FBLogin()">
+          <i class="fa fa-facebook-official"></i> Login With Facebook
+        </button>
+      </div>
+
+      <div id="timeline-wrapper">
+        <div class="form-group">
+          <label for="textArea" class="control-label">Post New Status</label>
+          <textarea id="status" class="form-control" rows="3" id="textArea"></textarea>
+          <br/>
+          <button class="btn btn-primary" type="button" onclick="postStatus()">
+            <i class="fa fa-send"></i> Post
+          </button>
+        </div>
+        <hr/>
+
+        <h2>
+          Your Timeline 
+          <button type="button" class="btn btn-primary" onclick="getTimelineFB()">
+            <i class="fa fa-refresh"></i>
+          </button>
+        </h2>
+        <hr/>
+        <div id="timeline"></div>
+          <ul class="pager">
+            <li class="previous disabled" onclick="prevNextTimeline(prev)"><a href="#">&larr; Newer</a></li>
+            <li class="next" onclick="prevNextTimeline(next)"><a href="#">Older &rarr;</a></li>
+          </ul>
+        </div>
+      </div>
+  </body>
+</html>
