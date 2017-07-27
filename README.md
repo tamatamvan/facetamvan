@@ -2,7 +2,7 @@
 
 A simple facebook client as an example for consuming graph API facebook both from the static website and server using node.js with express.js framework.
 
-This program consists of 2 parts, the API server, and the client side which is a simple static web apps.
+This program consist of 2 parts, the API server, and the client side which is a simple static web apps.
 
 ## Info & Dependencies
 
